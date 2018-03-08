@@ -22,7 +22,6 @@ object Form2: TForm2
     Height = 161
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 683
     object Label5: TLabel
       Left = 666
       Top = 16
@@ -38,7 +37,7 @@ object Form2: TForm2
     object Label3: TLabel
       Left = 447
       Top = 16
-      Width = 196
+      Width = 185
       Height = 13
       Caption = 'Probability of winning with change (%)'
     end
@@ -166,7 +165,7 @@ object Form2: TForm2
     TabOrder = 1
     object ChartMontyHall: TChart
       Left = 0
-      Top = 3
+      Top = 1
       Width = 729
       Height = 358
       Title.Text.Strings = (
