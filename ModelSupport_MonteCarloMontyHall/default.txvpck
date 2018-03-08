@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="ceykp52sd87glrv4j_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::d1ut55zdg8nowznim_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarloFrame.TForm2" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarloFrame.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::yvydshnvs1853n0en_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.TOnDataWriting" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem" />
+    </reference>
+    <reference referencedUin="design:view:::lqni0gb4a28pl0oxi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarloMontyHall.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::ooxtu0vc80qumjskl_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MyRandomGenerators.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MyRandomGenerators.TMyRandomRange" />
+      <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MyRandomGenerators.TMyRandom" />
+    </reference>
+  </view>
+</nodeSet>

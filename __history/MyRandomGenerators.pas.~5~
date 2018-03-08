@@ -1,0 +1,77 @@
+unit MyRandomGenerators;
+
+interface
+
+type
+  TMyRandom = class
+    protected
+      FBaseSeed: Integer;
+      FSeed: Integer;
+    public
+      function getDouble: Double; virtual;
+      function getIntegerRange(paMax: Integer): Integer;
+
+      constructor Create(paSeed: Integer);
+  end;
+
+  MyRandomRange = class(TMyRandom)
+    private
+      FMin: Integer;
+      FRange: Integer;
+    public
+      function getDouble: Double; override;
+      function getInteger: Integer;
+
+      constructor Create(paSeed: Integer; paMin: Integer; paMax: Integer);
+  end;
+
+implementation
+
+uses
+  System.Math;
+{ MyRandom }
+
+constructor TMyRandom.Create(paSeed: Integer);
+begin
+  FBaseSeed := paSeed;
+  FSeed := paSeed;
+end;
+
+function TMyRandom.getDouble: Double;
+begin
+  RandSeed := FSeed;
+  Result := Random;
+  FSeed := RandSeed;
+end;
+
+function TMyRandom.getIntegerRange(paMax: Integer): Integer;
+begin
+  RandSeed := FSeed;
+  Result := Random(paMax);
+  FSeed := RandSeed;
+end;
+
+{ MyRandomRange }
+
+constructor MyRandomRange.Create(paSeed, paMin, paMax: Integer);
+begin
+  //if paMin > paMax then raise Exception.Create('Min must be < Max');
+
+  inherited Create(paSeed);
+  FMin := paMin;
+  FRange := paMax - paMin;
+end;
+
+function MyRandomRange.getDouble: Double;
+begin
+ RandSeed := FSeed;
+ Result := FMin + Random * FRange;
+ FSeed := RandSeed;
+end;
+
+function MyRandomRange.getInteger: Integer;
+begin
+  Result := Floor(getDouble);
+end;
+
+end.

@@ -1,0 +1,65 @@
+unit MyRandomGenerators;
+
+interface
+
+type
+  MyRandom = class
+    protected
+      FBaseSeed: Integer;
+      FSeed: Integer;
+    public
+      function getDouble: Double; virtual;
+
+      constructor Create(paSeed: Integer);
+  end;
+
+  MyRandomRange = class(MyRandom)
+    private
+      FMin: Integer;
+      FRange: Integer;
+    public
+      function getDouble: Double; override;
+      function getInteger: Integer;
+
+      constructor Create(paSeed: Integer; paMin: Integer; paMax: Integer);
+  end;
+
+implementation
+
+{ MyRandom }
+
+constructor MyRandom.Create(paSeed: Integer);
+begin
+  FBaseSeed := paSeed;
+  FSeed := paSeed;
+end;
+
+function MyRandom.getDouble: Double;
+begin
+  RandSeed := FSeed;
+  Result := Random;
+  FSeed := RandSeed;
+end;
+
+{ MyRandomRange }
+
+constructor MyRandomRange.Create(paSeed, paMin, paMax: Integer);
+begin
+  inherited Create(paSeed);
+  FMin := paMin;
+  FRange := paMax - paMin;
+end;
+
+function MyRandomRange.getDouble: Double;
+begin
+ RandSeed := FSeed;
+ Result := FMin + Random * FRange;
+ FSeed := RandSeed;
+end;
+
+function MyRandomRange.getInteger: Integer;
+begin
+  Result := Trunc(getDouble);
+end;
+
+end.

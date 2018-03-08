@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.MonteCarlo" Type="System.String" Value="MonteCarlo" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.MonteCarloMontyHall" Type="System.String" Value="MonteCarloMontyHall" Category="General" IsBrowsable="False" />
+  <Option Name="Gendoc.Images" Type="System.Boolean" Value="True" Category="General" IsBrowsable="False" />
+  <Option Name="Gendoc.NavigationTree" Type="System.Boolean" Value="True" Category="General" IsBrowsable="False" />
+  <Option Name="Gendoc.LaunchBrowser" Type="System.Boolean" Value="True" Category="General" IsBrowsable="False" />
+  <Option Name="Gendoc.OutputFolder" Type="System.String" Value="C:\Users\janik\Desktop\out\doc" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.MyRandomGenerators" Type="System.String" Value="MyRandomGenerators" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.MonteCarloFrame" Type="System.String" Value="MonteCarloFrame" Category="General" IsBrowsable="False" />
+</TgConfig>

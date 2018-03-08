@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="yvydshnvs1853n0en_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,167,298" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FWarmUp" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FReplications" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FPointsInGraph" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FSkipData" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FWritingPeriod" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FTask" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.FOnEndTask" />
+      <reference referencedUin="delphi:e_property:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.OnEndTask" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.BeforeMC()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.DoMc()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.ShowResults(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.AfterMc()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.RunReplications()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.StopReplications()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMonteCarlo.Create(System.Integer)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.TOnDataWriting">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="192,1,107,36" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="318,1,282,328" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FDoorNumber" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRightChangedDecision" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRightKeptDecision" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRGCar" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRGPlayerFirstDoor" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRGOpenFakeDoorNoCar" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRGOpenFakeDoorYesCar" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FRGPlayerSecondDoor" />
+      <reference referencedUin="delphi:e_field:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FOnDataWriting" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.AdjustNumber(System.Integer,System.Integer,MyRandomGenerators.TMyRandomRange)" />
+      <reference referencedUin="delphi:e_property:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.OnDataWriting" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.BeforeMC()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.DoMc()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.ShowResults(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.AfterMc()" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.Create(System.Integer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.Destroy()" />
+      <reference referencedUin="delphi:l_gnt:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem:MonteCarlo.TMonteCarlo">
+        <property name="sourceAnchor" value="318,159" />
+        <property name="targetAnchor" value="177,159" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.FOnDataWriting">
+        <property name="sourceAnchor" value="318,19" />
+        <property name="targetAnchor" value="299,19" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:MonteCarloMontyHall:MonteCarlo.TMontyHallProblem.OnDataWriting">
+        <property name="sourceAnchor" value="318,11" />
+        <property name="targetAnchor" value="299,11" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>
